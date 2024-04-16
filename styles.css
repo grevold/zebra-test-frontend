@@ -1,0 +1,164 @@
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000238;
+  margin: 0;
+}
+
+.layout {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-image: url("images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  max-width: 818px;
+  margin-top: 117px;
+  margin-left: 0;
+  margin-right: 0;
+  height: 980px;
+  overflow: hidden;
+}
+.header_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.header {
+  font-size: 60px;
+  font-weight: 600;
+  max-width: 659px;
+  margin: 0 0 45px 0;
+}
+
+.button_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 267px;
+  height: 100px;
+  border-radius: 136px;
+  left: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.fill_hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: -300px;
+  width: 265px;
+  height: 98px;
+  border-radius: 136px;
+  transition: left 0.5s ease-in-out;
+  background-color: #2fc4fc;
+  z-index: 2;
+}
+.fill_hover_span {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 25px;
+  font-weight: 600;
+  font-style: normal;
+
+  transition: left 0.5s ease-in-out;
+}
+.button_border {
+  position: absolute;
+  width: 257px;
+  height: 90px;
+  border-radius: 136px;
+  border: 3px solid #000238;
+  z-index: 0;
+}
+
+.activate_border_animate {
+  display: none;
+  position: absolute;
+  width: 260px;
+  height: 93px;
+  border-radius: 136px;
+  border: 3px solid rgb(194, 5, 5);
+  z-index: 8;
+}
+
+.windmill_info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  max-width: 292px;
+  z-index: 5;
+}
+.indicators {
+  font-size: 140px;
+  font-weight: 600;
+  color: #2fc4fc;
+}
+.description {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.clouds {
+  position: absolute;
+  bottom: 300px;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.windmill_leg {
+  position: absolute;
+  bottom: 100px;
+  right: 250px;
+}
+.windmill_cap {
+  position: absolute;
+  bottom: 586px;
+  right: 250px;
+}
+.windmill_blades {
+  position: absolute;
+  bottom: 380px;
+  right: 20px;
+}
+
+.wave_container {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wave {
+  width: 2080px;
+  margin-right: 30px;
+  transform: rotate(-3deg);
+}
