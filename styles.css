@@ -124,10 +124,12 @@ body {
 
 .clouds {
   position: absolute;
-  bottom: 300px;
+  left: 0;
+  bottom: 450px;
   width: 100%;
   z-index: 0;
   overflow: hidden;
+  transition: left 80s;
 }
 
 .windmill_leg {
