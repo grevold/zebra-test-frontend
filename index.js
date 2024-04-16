@@ -5,7 +5,9 @@ const blades = document.querySelector(".windmill_blades");
 const clouds = document.querySelector(".clouds");
 
 //анимация для движения облаков
-clouds.style.left = "-800px";
+window.setTimeout(() => {
+  clouds.style.left = "-800px";
+}, 1000);
 
 //анимация при наведении на кнопку
 buttonContainer.addEventListener("mouseover", function () {
