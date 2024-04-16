@@ -162,3 +162,31 @@ body {
   margin-right: 30px;
   transform: rotate(-3deg);
 }
+
+@media (max-width: 1920px) {
+  .wave_container {
+    height: 600px;
+  }
+  .wave {
+    margin-top: 400px;
+    margin-left: 100px;
+    transform: rotate(3deg);
+  }
+  .clouds {
+    top: 0;
+    height: 400px;
+    z-index: 0;
+  }
+  .layout {
+    background-position: 0px -800px;
+  }
+  .container {
+    height: 680px;
+  }
+  .windmill_info {
+    z-index: 12;
+  }
+  .header {
+    z-index: 2;
+  }
+}
